@@ -1,0 +1,133 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f0f0f0;
+    margin: 0;
+    padding: 20px;
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+    padding-bottom: 10px;
+  }
+  
+  .carousel-container {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .carousel-track {
+    display: flex;
+    transition: transform 0.5s ease;
+  }
+  
+  .carousel-item {
+    min-width: 100%;
+    padding: 40px;
+    text-align: center;
+  }
+  
+  .carousel-item img {
+    max-width: 100%;
+    max-height: 150px;
+    object-fit: contain;
+  }
+  
+  .arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: gray;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 1;
+    border-radius: 50%;
+  }
+  
+  .arrow.left {
+    left: 10px;
+  }
+  
+  .arrow.right {
+    right: 10px;
+  }
+  
+  .comment-section {
+    margin: 30px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 600px;
+  }
+  
+  .comment-section input,
+  .comment-section textarea {
+    width: 90%;
+    max-width: 500px;
+    display: block;
+    margin: 8px auto;
+    padding: 8px 12px;
+    font-size: 14px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+  
+  .comment-section button {
+    background: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: block;
+    margin: 10px auto 0;
+  }
+  
+  .comments-display {
+    margin: 20px auto;
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    max-width: 600px;
+  }
+  
+  .comment-box {
+    border-bottom: 1px solid #ccc;
+    padding: 8px 0;
+  }
+  
+  .rating {
+    display: flex;
+    justify-content: center;
+    margin: 10px 0;
+    font-size: 24px;
+    cursor: pointer;
+    align-items: center;
+  }
+  
+  .rating span {
+    color: #ccc;
+    transition: color 0.2s;
+  }
+  
+  .rating span.selected,
+  .rating span:hover,
+  .rating span:hover ~ span {
+    color: gold;
+  }
+  
+  .rating p {
+    margin: 0 10px 0 0;
+    font-size: 16px;
+    align-self: center;
+  }
+  
